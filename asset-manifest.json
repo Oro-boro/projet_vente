@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Oro-boro/projet_vente.git/static/css/main.e21a0b48.chunk.css",
+    "main.js": "/Oro-boro/projet_vente.git/static/js/main.fa6637b5.chunk.js",
+    "main.js.map": "/Oro-boro/projet_vente.git/static/js/main.fa6637b5.chunk.js.map",
+    "runtime-main.js": "/Oro-boro/projet_vente.git/static/js/runtime-main.23abf74b.js",
+    "runtime-main.js.map": "/Oro-boro/projet_vente.git/static/js/runtime-main.23abf74b.js.map",
+    "static/js/2.47b27569.chunk.js": "/Oro-boro/projet_vente.git/static/js/2.47b27569.chunk.js",
+    "static/js/2.47b27569.chunk.js.map": "/Oro-boro/projet_vente.git/static/js/2.47b27569.chunk.js.map",
+    "index.html": "/Oro-boro/projet_vente.git/index.html",
+    "precache-manifest.4fc8c11a8f7967d8eda8ca61f8d08a0d.js": "/Oro-boro/projet_vente.git/precache-manifest.4fc8c11a8f7967d8eda8ca61f8d08a0d.js",
+    "service-worker.js": "/Oro-boro/projet_vente.git/service-worker.js",
+    "static/css/main.e21a0b48.chunk.css.map": "/Oro-boro/projet_vente.git/static/css/main.e21a0b48.chunk.css.map",
+    "static/js/2.47b27569.chunk.js.LICENSE.txt": "/Oro-boro/projet_vente.git/static/js/2.47b27569.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23abf74b.js",
+    "static/js/2.47b27569.chunk.js",
+    "static/css/main.e21a0b48.chunk.css",
+    "static/js/main.fa6637b5.chunk.js"
+  ]
+}
