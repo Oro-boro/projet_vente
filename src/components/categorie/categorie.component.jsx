@@ -20,6 +20,7 @@ class Categorie extends React.Component {
           titre: "Chapeaux",
           imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
           id: 1,
+          linkUrl: "Chapeaux", // 57. Rajout de ces trucs pour le routage.
         },
         // 21. titre: On remet le "classname" de la <div> (de "homepage.component.jsx"). Ici "Chapeaux"
         // imageUrl: On va choper une image sur le web ou autre..
@@ -28,11 +29,13 @@ class Categorie extends React.Component {
           titre: "Vestes",
           imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
           id: 2,
+          linkUrl: "Vestes", // 57. Rajout de ces trucs pour le routage. Ne pas oublier de passer cette nouvelle variable a notre composant. (58. plus bas).
         },
         {
           titre: "Baskets",
           imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
           id: 3,
+          linkUrl: "Baskets", // 57. Rajout de ces trucs pour le routage. Ne pas oublier de passer cette nouvelle variable a notre composant. (58. plus bas).
         },
         {
           titre: "Femmes",
@@ -40,6 +43,7 @@ class Categorie extends React.Component {
           // 28. Augmentation de la taille de l'image via un parametre "taille".
           taille: "large",
           id: 4,
+          linkUrl: "Femmes", // 57. Rajout de ces trucs pour le routage. Ne pas oublier de passer cette nouvelle variable a notre composant. (58. plus bas).
         },
         {
           titre: "Hommes",
@@ -47,6 +51,7 @@ class Categorie extends React.Component {
           // 28 BIS. Augmentation de la taille de l'image via un parametre "taille" et modification dans le "render" pour envoyer l'info...
           taille: "large",
           id: 5,
+          linkUrl: "Femmes", // 57. Rajout de ces trucs pour le routage. Ne pas oublier de passer cette nouvelle variable a notre composant. (58. plus bas).
         },
       ],
     };
@@ -58,12 +63,17 @@ class Categorie extends React.Component {
       <div className="Categories">
         {/* 22. On propage le resultat des changements (titre + images) dans toute la <Div> "Categorie via le {props.titre} selon la regle : PARENT->ENFANT*/}
 
-        {this.stage.sections.map(({ titre, imageUrl, id, taille }) => (
+        {this.stage.sections.map(({ titre, imageUrl, id, taille, linkUrl }) => (
+          // 58. Ajout de "linkUrl" pour le routage. PS: ES6 permet d'économiser du code sur la ligne du haut, pour ne PAS devoir à chaques crétion d'un nouvel élément le rajouter ici, avec :
+          // " this.stage.sections.map(({id, ...autreSectionProps}) => ( <ChoixItem key={id} {...autreSectionProps} /> "
+          // 59. Maintenant ENCORE, Il faut adapter le composant "choix-item.component.jsx" Go en 60. Dans ce fichier!
           <ChoixItem
             key={id}
             imageUrl={imageUrl}
             titre={titre}
             taille={taille}
+            linkUrl={linkUrl}
+            // 58. "linkUrl" Ici aussi.
             // 29. Apres ça, il faudra adapter "ChoixItem". Go -> choix-item.component.jsx
           />
         ))}

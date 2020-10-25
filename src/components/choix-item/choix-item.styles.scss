@@ -15,9 +15,10 @@
   // background-size: cover;
   overflow: hidden;
   // 40. "overflow : hidden;" regle le probleme de l'effet de zoom (qui agrandit la fenetre comme un bouton inversé).
+  // 41. Maintenant, installer "React-routeur" avec "npm i react-router-dom" dans le terminal et on retourne vers "src/index.js".
 
-  // 39. Effet au survol. Cependant, l'effet est un peu degueu. Tout s'arrange avec le 40 (dans ce fichier).
   &:hover {
+    // 39. Effet au survol. Cependant, l'effet est un peu degueu. Tout s'arrange avec le 40 (dans ce fichier).
     cursor: pointer;
 
     & .background-image {
