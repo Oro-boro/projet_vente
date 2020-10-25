@@ -1,1 +1,5 @@
-
+/* 33. Import de la police Google Font dans App.css en rapport avec "index.html" (dans public.. donc un autre dossier.. logique non!) */
+/* 34. Maintenant on va mettre le titre en majuscule.. Go -> choix-item.component.jsx */
+body {
+  font-family: "Open Sans Condensed";
+}

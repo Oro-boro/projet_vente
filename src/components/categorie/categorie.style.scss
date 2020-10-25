@@ -1,0 +1,9 @@
+// 15.BIS : Collage du style de ".Categories" à partir du scss de pages/homepage/homepage.style.scss (qui du coup peut être supprimé de ce dernier)
+// 16. Maintenant, go dans "categorie.component.jsx"...
+
+.Categories {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

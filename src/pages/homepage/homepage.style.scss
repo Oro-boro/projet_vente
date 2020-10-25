@@ -1,0 +1,77 @@
+.Homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px, 80px;
+}
+
+/* 37. Comportement de la nouvelle classe "background-image" ajoutée à "choix-item.component.jsx" ET supprimer :
+// background-position: center;
+// background-size: cover;
+de "choix-item.style.css" -> .Choix-item... FUCK!
+// De plus, pour que la <div> soit pas décalée, il faut rajouter ICI dans cette CSS "position: absolute;" dans ".Content"
+*/
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* 8. Cette partie à été COUPEE / collée à l'intérieur du nouveau fichier (vide) : "components/choix-item/choix-item.style.scss" - (Laissée ici pour l'exemple des étapes).
+
+.Choix-item {
+  display: flex;
+  min-width: 30%;
+  height: 240px;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 7.5px 15px;
+
+  &.first-child {
+    margin-right: 7.5px;
+  }
+
+  &.last-child {
+    margin-left: 7.5px;
+  }
+  */
+
+/* 9. Partie COUPEE / collée dans : "categorie.style.scss" - (Laissée ici pour l'exemple des étapes).
+
+.Categories {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+*/
+
+.Content {
+  display: flex;
+  height: 90px;
+  padding: 0 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+
+  .Titre {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 22px;
+  }
+
+  .Sous-titre {
+    font-weight: lighter;
+    font-size: 16px;
+    color: #4a4a4a4a;
+  }
+}
+// }

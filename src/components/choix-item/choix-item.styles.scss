@@ -1,0 +1,45 @@
+// 8.BIS : Collage du style de ".choix-item" à partir du scss de pages/homepage/homepage.style.scss (qui du coup peut être supprimé de ce dernier)
+// 9. Maintenant, go dans "choix-item.component.jsx" pour la suite!
+.Choix-item {
+  display: flex;
+  min-width: 30%;
+  height: 240px;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 7.5px 15px;
+  // 27. Pour l'image du composant "choix-item.component.jsx"
+  // 38. Bon, ces deux lignes sont appelée à disparaitre.. donc je les met en commentaire..
+  // background-position: center;
+  // background-size: cover;
+  overflow: hidden;
+  // 40. "overflow : hidden;" regle le probleme de l'effet de zoom (qui agrandit la fenetre comme un bouton inversé).
+
+  // 39. Effet au survol. Cependant, l'effet est un peu degueu. Tout s'arrange avec le 40 (dans ce fichier).
+  &:hover {
+    cursor: pointer;
+
+    & .background-image {
+      transform: scale(1.1);
+      transition: transform 6s cubic-bezier (0.25, 0.45, 0.45, 0.95);
+    }
+    & .content {
+      opacity: 0.9;
+    }
+  }
+
+  // 30. Definition du style "large".
+  & .large {
+    height: 380px;
+  }
+  // 31. Maintenant on va changer la typo. Go -> "index.html" (dans public) pour y lier une font "Google".
+
+  &.first-child {
+    margin-right: 7.5px;
+  }
+
+  &.last-child {
+    margin-left: 7.5px;
+  }
+}
