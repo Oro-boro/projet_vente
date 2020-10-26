@@ -1,0 +1,17 @@
+// 94. Bon, aller un gros copié / collé car j'ai pas que ca à foutre et c'est déjà devenu bien compliqué...
+
+.apercu-collection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  .titre {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  .apercu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// 95. Une fois fini, ca devrait être beaucoup plus joli. SI l'on veut mettre un peu plus d' espace autour (car là, les images collent le bord du body de la page), il faut aller dans le "App.css" (apres, qui sait, peut être qu'un "margin" dans le scss de ce composant-ci ferait aussi l'affaire. Mais pas le temps de tester. Go -> App.css (Point 96).

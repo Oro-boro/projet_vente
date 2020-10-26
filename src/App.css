@@ -2,4 +2,8 @@
 /* 34. Maintenant on va mettre le titre en majuscule.. Go -> choix-item.component.jsx */
 body {
   font-family: "Open Sans Condensed";
+  padding: 20px 60px;
+   {
+    /* 96. Bon voilà, on rajoute ça ici pour que les images collent plus le bord. */
+  }
 }

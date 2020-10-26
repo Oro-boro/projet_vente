@@ -56,7 +56,7 @@ const ChoixItem = ({ titre, imageUrl, taille, history, linkUrl, match }) => (
   >
     {/* 56. Rajout de "onClick={() => history.push()}" pour le routage. MAIS MAIS MAIS C'est TOUJOURS PAS FINI hein!, il nous faut une URL qui change selon le choix. On doit donc la rendre dynamique.. On va donc encore rajouter des trucs dans "categorie.component.jsx" GO! */}
     {/* 61. Ajout de " `${match.url}${linkUrl}` " dans "history.push()" pour le routage toujours, "match" afin d'avoir le contexte de l'URL actuel je le rapelle..*/}
-    {/* 62. VOILA, normalement là avec toutes les manip depuis l'installation de "react-routeur-dom" (point 42. (index.js) pour le début) on a maintenant un systeme de navigation complet. Le starter étant : "http://localhost:3000/" pour le moment, les "boutons" étant liés à présent.*/}
+    {/* 62. VOILA, normalement là avec toutes les manip depuis l'installation de "react-routeur-dom" (point 42. (index.js) pour le début) on a maintenant un systeme de navigation complet. Le starter étant : "http://localhost:3000/" pour le moment, les "boutons" étant liés à présent. La suite : Création de la "shopping-page" (mais avant il faut "nettoyer" nos modifications de test (pour le router) cad la "Version 2" dans App.js. Donc création d'une "Version3", "propre" dans App.js (point 63.) Go -> App.js */}
 
     <div
       className="background-image"

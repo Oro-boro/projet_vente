@@ -1,7 +1,7 @@
 // 17. Les deux lignes de départ. (Déjà fait précedemment, plus besoin d'expliquer).
 
 import React from "react";
-import "./categorie.style.scss";
+import "./categorie.styles.scss";
 // 21. Importantion du composant de "choix-item.component.jsx" dans lequel, pour rappel on à donné le nom "ChoixItem". (const ChoixItem = (props) => (....).
 import ChoixItem from "../choix-item/choix-item.component";
 
