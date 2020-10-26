@@ -11,4 +11,9 @@ a {
   text-decoration: none;
   color: black;
 }
+
+* {
+  box-sizing: border-box;
+}
 /* 105. Voilà, je sais pas pourquoi "a", mais bon, ca fait le taff (couleur et surlignage du texte du composant "Header") */
+/* 106. Bon, bon bon... on attaque le "Login / Inscription". Vu que ce composant ne sera utilisé qu'une fois, on va le créer dans le dossier "pages". Ce composant est un composant dans lequel se trouvera par apres deux "autres" composants, un pour "inscription" et un pour "login". D'abord, on va faire le composant "englobant" donc. Créer un nouveau dossier "login-et-inscription" dans "pages" et dedans deux nouveaux fichiers "login-et-inscription.component.jsx" et "login-et-inscription.styles.scss". Go -> "login-et-inscription.component.jsx" une fois que c'est créé pour le (Point 107.) */

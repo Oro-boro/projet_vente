@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom"; // 98. - import { Link } from "react-router-dom" : C'est "nouveau" et utilisé plus bas.
 import { ReactComponent as Logo } from "../../assets/couronne.svg"; // 99. Ca aussi c'est nouveau. C'est un chargement du logo en .SVG (couronne.svg) dans React.
 import "./header.styles.scss";
+import { auth } from "../../firebase/firebase.utils";
 
-const Header = () => (
+const Header = ({ currentUser }) => (
   <div className="header">
     <Link className="logo-container" to="/">
       <Logo className="logo" />
@@ -15,6 +16,15 @@ const Header = () => (
       <Link className="option" to="/contact">
         CONTACT
       </Link>
+      {currentUser ? (
+        <div className="option" onClick={() => auth.signOut()}>
+          LOGOUT
+        </div>
+      ) : (
+        <Link className="option" to="/inscription">
+          LOGIN
+        </Link>
+      )}
     </div>
   </div>
 );

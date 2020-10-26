@@ -1,0 +1,29 @@
+// 120. Voilà, avec ca, le "login" devrait être un peu réduit, pour ne plus occuper tout l'écran. Bon, maintenant, le (ou "les") boutons, car bien sur ils peuvent eux aussi être réutilisés... DONC ON VA EN FAIRE DES COMPOSANTS!!! PUTAIN!! Créer un nouveau dossier "bouton_custom" dans "components". Et deux fichiers : "bouton-custom.component.jsx" et "bouton-custom.styles.scss". Apres Go -> "bouton-custom.component.jsx" Pour le (Point 121.)
+.login {
+  width: 380px;
+
+  // 125. Voilà, rajout de ces 4Lignes pour plus de style. (Point 126. Plus bas)
+  display: flex;
+  flex-direction: column;
+
+  .titre {
+    margin: 10px 0;
+  }
+  .bouttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// 126. La suite, c'est pour pouvoir se loger / passworder. On va utiliser une API externe! C'est Google Firebase.
+// 127. Firebase permet ( dans une certaine limite ) d'utiliser ces services - Authentification, base de donnée, hosting etc... Se rendre donc sur "Firebase" : https://firebase.google.com/
+// 128. Firebase sera la partie Back-end de notre application, l'avantage c'est qu'il ne faut pas écrire de code coté serveur, tout à été déjà réaliser pas Google. La première opération est de ce connecter avec une adresse gmail sur le site de Firebase. A ce moment là vous aurez accès a le console de Firebase. (le petit icone en haut tout à gauche -> acceder à la console".
+// 129. Cliquez sur le bouton "Go to console". Vous retrouver ici les différents projets en cours et la possibilité d'en ajouter un. Cliquez sur le bouton "créer un projet".
+// 130. Nommez ce projet : "projet-vente". Cliquez sur le bouton -> "Sélectionner la ressource parente" (bon là je selectionne mon école si je me suis "inscrit" avec mon mail scolaire.. -> Cliquer sur le bouton OK -> Continuer les étapes -> L'étape suivante permet d'avoir "Google analytics" intégré, fait un -> "Continue" -> Dernière étape, "accepter les conditions" ... et cliquez sur "Créer un projet".
+// 131. Patienter pendant la création des resources sur Firebase. Dans le cadre de notre projet, nous utiliserons l'Authentification et la Database.
+// 132. Configurer Firebase : Cliquez sur le bouton "</>", Donner le pseudo de "projet_vente-db" à votre app ( cela sera une information interne ) et Cliquez sur Enregistrez l'application.
+// 133. Firebase va vous donner le code ajouter pour vous connecter.
+// 134. Comme nous travaillons en JavaScript, nous n'avons besoins que du contenu de l'objet "firebaseConfig", copiez ce code.
+// 135. Nous allons installer les modules nécessaire. Dans le terminal tapez :
+// npm i firebase
+// Une fois installé. Créer un nouveau dossier "firebase" dans le dossier "src" et un nouveau fichier "firebase.utils.js" dans celui-ci. (Go -> "firebase.utils.js" (Point 136.)
