@@ -3,7 +3,12 @@
 body {
   font-family: "Open Sans Condensed";
   padding: 20px 60px;
-   {
-    /* 96. Bon voilà, on rajoute ça ici pour que les images collent plus le bord. */
-  }
 }
+/* 96. Bon voilà, on rajoute "padding" ici pour que les images collent plus le bord. */
+/* 97. Maintenant que nous avons une page de shopping, réalisons notre header qui permettra la navigation de notre application. Il sera toujours visible, quelque soit la page en cours. Crée un nouveau dossier "header" dans le dossier "component", un fichier "header.component.jsx" et "header.styles.scss" dedans. Créer aussi un dossier "assets" dans "src" et y mettre un logo (fourni avec : https://drive.google.com/file/d/12Pvm1eOt99g6M6tZylQIuEx8RIZvF5-j/view ) mais on l'a deja en .svg du coup c'est bon... (pour info, la taille du .svg (couronne) c'est (450 x 351). Une fois que tout ca est créé.. Go -> "header.component.jsx" (point 98.) */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* 105. Voilà, je sais pas pourquoi "a", mais bon, ca fait le taff (couleur et surlignage du texte du composant "Header") */

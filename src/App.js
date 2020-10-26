@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom"; // 63 BIS. Plus besoin de la p
 import Homepage from "./pages/homepage/homepage.component";
 // 4. le component "Homepage" exporté et le chemin de ce component.
 import ShopPage from "./pages/shopping/shopping.component"; // 75. Import de la "ShopPage".. Maintenant, il faut l'inclure dans le <Switch><route> de l'App, plus bas. (point 76.)
+import Header from "./components/header/header.component"; // 102. Import du "Header" dans "l'App". Go -> Point 103. En dessous (pres du <Switch>).
 
 /* ------------------------------------------------------------- Version 1. de la page (on va dire) -----------------------------------------------------------
 function App() {
@@ -71,6 +72,8 @@ const AutrePage = (props) => {
 function App() {
   return (
     <div>
+      <Header />{" "}
+      {/* 103. Placement de "Header". Normalement il devrait apparaitre. Mais il est mal foutu, donc Go -> "header.style.scss" pour arranger ça. */}
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route path="/Shopping" component={ShopPage} />
